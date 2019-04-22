@@ -10,11 +10,17 @@
 </head>
 
 <body>
-    <div id="vue-app-one">
-        <greeting></greeting>
-    </div>
-    <div id="vue-app-two">
-        <greeting></greeting>
+    <div id="app">
+        <input type="text" ref="input">
+        <br>
+        <p>Your fav food : {{ favFood }}</p>
+        <div ref="test">Hello gays</div>
+        <br>
+        <p>Data from ref test : {{ ref }}</p>
+
+        <br>
+        <br>
+        <button @click="getRefs">Search Refs</button>
     </div>
 
     <script src="assets/vendor/vue.js"></script>
