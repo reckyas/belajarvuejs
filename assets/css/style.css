@@ -1,0 +1,49 @@
+#bag {
+    width: 200px;
+    height: 400px;
+    background: url(../img/bag.png) center no-repeat;
+    background-size: 80%;
+    margin: 0 auto;
+}
+
+#bag.burst {
+    background: url(../img/bag-burst.png) center no-repeat;
+    background-size: 80%;
+}
+
+.bag-healt {
+    width: 150px;
+    border: 2px solid rgb(7, 3, 43);
+    margin: 10px auto
+}
+
+.bag-healt .healt {
+    height: 20px;
+    width: 100%;
+    background: green;
+    transition: 0.3s;
+}
+
+.control {
+    margin: 30px auto;
+    width: 150px;
+    text-align: center;
+}
+
+h1.win {
+    width: 300px;
+    margin: 0 auto;
+    color: blue;
+    animation: win 0.5;
+    text-align: center;
+}
+
+@keyframes win {
+    from {
+        margin-top: -20px;
+    }
+
+    to {
+        margin-top: 0;
+    }
+}

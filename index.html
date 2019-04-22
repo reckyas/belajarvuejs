@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Belajar Vue Js</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div id="vue-app">
+        <!-- Bag -->
+        <div id="bag" v-bind:class="{burst: ended}"></div>
+        <!-- Bag healt -->
+        <div class="bag-healt">
+            <div class="healt" v-bind:style="{width: healt + '%'}"></div>
+        </div>
+        <!-- Win Conratulation -->
+        <h1 v-if="ended" class="win">You Win!!</h1>
+        <!-- Controls -->
+        <div class="control">
+            <button v-on:click="punch" v-show="!ended">Punch</button>
+            <button v-on:click="restart">Restart</button>
+        </div>
+    </div>
+
+    <script src="assets/vendor/vue.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
